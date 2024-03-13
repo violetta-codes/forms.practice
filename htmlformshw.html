@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homework</title>
+     <script src="htmlformshw.js" defer></script>
+     <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+     </style>
+    </head>
+    <body>
+<form id="registrationForm" onsubmit="validateForm(event)">
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Password: <input type="password" name="password" required></label><br>
+    <label>Date of Birth: <input type="date" name="dob" required></label><br>
+    <label>Subscribe to Newsletter: <input type="checkbox" name="subscribe"></label><br>
+    <button type="submit">Submit</button>
+</form>
+    </body>
+    </html>
